@@ -1,0 +1,391 @@
+/* ==========================================================================
+   Joshua Oh — portfolio theme
+   Palette: deep teal primary, warm rust accent. Tuned for light + dark.
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap");
+
+/* ---- Light scheme ---- */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #0f4c52;
+  --md-primary-fg-color--light: #16696f;
+  --md-primary-fg-color--dark:  #0a373b;
+  --md-accent-fg-color:         #b5521c;
+  --md-typeset-a-color:         #0f6b72;
+  --jo-surface:                 #ffffff;
+  --jo-surface-alt:             #f4f7f7;
+  --jo-border:                  #dde5e5;
+  --jo-muted:                   #55676a;
+  --jo-tag-bg:                  #e6efef;
+  --jo-tag-fg:                  #0d4348;
+  --jo-hero-from:               #0f4c52;
+  --jo-hero-to:                 #10656b;
+}
+
+/* ---- Dark scheme ---- */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #0c2f33;
+  --md-primary-fg-color--light: #16696f;
+  --md-primary-fg-color--dark:  #081f22;
+  --md-accent-fg-color:         #f0a868;
+  --md-typeset-a-color:         #64d2c7;
+  --md-default-bg-color:        #0e1518;
+  --md-default-fg-color:        #dfe7e8;
+  --md-default-fg-color--light: #a9babc;
+  --jo-surface:                 #162024;
+  --jo-surface-alt:             #131d20;
+  --jo-border:                  #27373b;
+  --jo-muted:                   #9fb2b5;
+  --jo-tag-bg:                  #1c2f33;
+  --jo-tag-fg:                  #79d9ce;
+  --jo-hero-from:               #0b2b2f;
+  --jo-hero-to:                 #123c41;
+}
+
+/* ---- Typography ---- */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-header__topic:first-child > .md-ellipsis {
+  font-family: "Space Grotesk", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+}
+
+.md-typeset h2 {
+  margin-top: 2.2rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--jo-border);
+}
+
+/* ---- Hero ---- */
+.jo-hero {
+  margin: 0 0 2.4rem;
+  padding: 2.4rem 2rem;
+  border-radius: 0.55rem;
+  background: linear-gradient(135deg, var(--jo-hero-from) 0%, var(--jo-hero-to) 100%);
+  color: #ffffff;
+}
+
+.jo-hero .jo-eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8fd6cd;
+}
+
+.md-typeset .jo-hero h1 {
+  margin: 0 0 0.7rem;
+  color: #ffffff;
+  font-size: 1.95rem;
+  line-height: 1.15;
+}
+
+.jo-hero p {
+  max-width: 46rem;
+  margin: 0 0 0.6rem;
+  font-size: 0.84rem;
+  line-height: 1.65;
+  color: #d7ebe8;
+}
+
+.jo-hero p:last-child { margin-bottom: 0; }
+.jo-hero strong { color: #ffffff; }
+
+.jo-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.4rem;
+}
+
+.md-typeset .jo-hero-actions a {
+  display: inline-block;
+  padding: 0.42rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 2rem;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 125ms, border-color 125ms;
+}
+
+.md-typeset .jo-hero-actions a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: #ffffff;
+}
+
+.md-typeset .jo-hero-actions a.jo-primary {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: var(--jo-hero-from);
+}
+
+.md-typeset .jo-hero-actions a.jo-primary:hover { background: #e3f2f0; }
+
+/* ---- Project cards ---- */
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--jo-border);
+  border-radius: 0.5rem;
+  background: var(--jo-surface);
+  padding: 0;
+  overflow: hidden;
+  transition: border-color 125ms, box-shadow 125ms, transform 125ms;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-typeset-a-color);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+  transform: translateY(-2px);
+}
+
+/* Every direct child is inset; the cover image then bleeds back out to the edges.
+   Done with padding + negative margin rather than :has(), so card layouts that
+   don't lead with an image (e.g. the contact cards) inset correctly too. */
+.md-typeset .grid.cards > ul > li > * {
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.md-typeset .grid.cards > ul > li > *:first-child { padding-top: 1rem; }
+.md-typeset .grid.cards > ul > li > *:last-child { padding-bottom: 1rem; }
+
+/* Vertical rhythm between card text blocks (margin was zeroed above) */
+.md-typeset .grid.cards > ul > li > p + p { margin-top: 0.5rem; }
+
+.md-typeset .grid.cards > ul > li > hr {
+  margin: 0.7rem 0;
+  padding: 0;
+  border-bottom: 1px solid var(--jo-border);
+}
+
+/* Cover image bleeds back out over the container inset via negative margins,
+   including the 1rem top padding it inherits as the first child. */
+.md-typeset .grid.cards > ul > li > p > img {
+  display: block;
+  width: calc(100% + 2rem);
+  height: 168px;
+  margin: -1rem -1rem 0;
+  object-fit: cover;
+  object-position: center;
+  background: var(--jo-surface-alt);
+  border-bottom: 1px solid var(--jo-border);
+}
+
+/* The tag list is hoisted out of its <p> by the HTML parser, so target it directly */
+.md-typeset .grid.cards > ul > li > ul.jo-tags {
+  margin: 0.8rem 0 0;
+  padding-bottom: 1rem;
+}
+
+.md-typeset .grid.cards > ul > li > p > strong {
+  display: block;
+  padding-top: 0.9rem;
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-size: 0.85rem;
+}
+
+.jo-card-meta {
+  display: block;
+  color: var(--jo-muted);
+  font-size: 0.66rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ---- Tech pills ---- */
+.jo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.8rem 0 1.2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.jo-tags li,
+.jo-tag {
+  display: inline-block;
+  padding: 0.16rem 0.6rem;
+  border-radius: 2rem;
+  background: var(--jo-tag-bg);
+  color: var(--jo-tag-fg);
+  font-size: 0.63rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.md-typeset .jo-tags li { margin: 0; }
+
+/* ---- Spec block under a project title ---- */
+.jo-spec {
+  margin: 1.2rem 0 1.8rem;
+  border: 1px solid var(--jo-border);
+  border-radius: 0.5rem;
+  background: var(--jo-surface-alt);
+  padding: 1rem 1.2rem;
+}
+
+.jo-spec dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.45rem 1.2rem;
+  margin: 0;
+}
+
+.jo-spec dt {
+  margin: 0;
+  color: var(--jo-muted);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  align-self: baseline;
+}
+
+.jo-spec dd {
+  margin: 0;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+/* ---- Figures ---- */
+.md-typeset figure {
+  margin: 1.6rem auto;
+  max-width: 100%;
+}
+
+.md-typeset figure img {
+  border: 1px solid var(--jo-border);
+  border-radius: 0.4rem;
+  background: #ffffff;
+}
+
+.md-typeset figcaption {
+  margin-top: 0.6rem;
+  color: var(--jo-muted);
+  font-size: 0.68rem;
+  line-height: 1.5;
+  max-width: 44rem;
+}
+
+/* Mermaid diagrams sit on a surface so both themes read cleanly */
+.md-typeset .mermaid {
+  margin: 1.6rem 0;
+  padding: 1rem;
+  border: 1px solid var(--jo-border);
+  border-radius: 0.4rem;
+  background: var(--jo-surface-alt);
+  overflow-x: auto;
+}
+
+/* ---- Skills columns ---- */
+.jo-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0 1.8rem;
+}
+
+.jo-skills section {
+  border: 1px solid var(--jo-border);
+  border-radius: 0.5rem;
+  background: var(--jo-surface-alt);
+  padding: 0.9rem 1rem 1rem;
+}
+
+.jo-skills h3 {
+  margin: 0 0 0.5rem !important;
+  padding: 0 !important;
+  border: 0 !important;
+  color: var(--jo-muted);
+  font-size: 0.66rem !important;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* ---- Callout for items still to be supplied ---- */
+.md-typeset .admonition.jo-todo,
+.md-typeset details.jo-todo {
+  border-left-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .jo-todo > .admonition-title {
+  background: color-mix(in srgb, var(--md-accent-fg-color) 12%, transparent);
+}
+
+.md-typeset .jo-todo > .admonition-title::before {
+  background-color: var(--md-accent-fg-color);
+  -webkit-mask-image: var(--md-admonition-icon--warning);
+          mask-image: var(--md-admonition-icon--warning);
+}
+
+/* ---- Headshot placeholder ---- */
+.jo-portrait {
+  float: right;
+  width: 170px;
+  margin: 0 0 1rem 1.5rem;
+  border: 1px dashed var(--jo-border);
+  border-radius: 0.5rem;
+  background: var(--jo-surface-alt);
+  aspect-ratio: 4 / 5;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  text-align: center;
+  color: var(--jo-muted);
+  font-size: 0.64rem;
+  line-height: 1.5;
+}
+
+/* ---- Video placeholder ---- */
+.jo-video-slot {
+  display: grid;
+  place-items: center;
+  margin: 1.6rem 0;
+  padding: 2.4rem 1.5rem;
+  border: 2px dashed var(--jo-border);
+  border-radius: 0.5rem;
+  background: var(--jo-surface-alt);
+  text-align: center;
+  color: var(--jo-muted);
+  font-size: 0.74rem;
+  line-height: 1.6;
+}
+
+.jo-video-slot strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--md-default-fg-color);
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-size: 0.86rem;
+}
+
+.md-typeset video {
+  width: 100%;
+  border: 1px solid var(--jo-border);
+  border-radius: 0.4rem;
+}
+
+@media screen and (max-width: 45em) {
+  .jo-portrait { float: none; width: 100%; max-width: 220px; margin: 0 auto 1.5rem; }
+  .jo-hero { padding: 1.7rem 1.2rem; }
+  .md-typeset .jo-hero h1 { font-size: 1.55rem; }
+  .jo-spec dl { grid-template-columns: 1fr; gap: 0.15rem; }
+  .jo-spec dt { margin-top: 0.6rem; }
+}
+
+/* ---- Footer polish ---- */
+.md-footer-meta { background: var(--md-primary-fg-color--dark); }
