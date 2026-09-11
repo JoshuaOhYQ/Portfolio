@@ -6,6 +6,8 @@
 
 Embedded systems, computer vision and IoT — taken from problem statement to working hardware.
 
+**Available for a 12-week placement: 25 January – 23 April 2027**
+
 [![Live site](https://img.shields.io/badge/Live_site-joshuaohyq.github.io%2FPortfolio-0f4c52?style=flat-square)](https://joshuaohyq.github.io/Portfolio/)
 [![Deploy](https://github.com/JoshuaOhYQ/Portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/JoshuaOhYQ/Portfolio/actions/workflows/deploy.yml)
 [![Built with Material for MkDocs](https://img.shields.io/badge/built_with-Material_for_MkDocs-526cfe?style=flat-square&logo=materialformkdocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
@@ -18,15 +20,16 @@ Embedded systems, computer vision and IoT — taken from problem statement to wo
 
 ## About
 
-I'm Joshua Oh (Oh Yu Qiao), an Electronic and Electrical Engineering undergraduate at
-Sunway University. My work sits where software meets hardware — a model or a piece of
-logic that has to produce a physical result: a servo that moves, a valve that closes,
-an alert that reaches someone in time.
+I'm Joshua Oh Yu Qiao, a third-year Electronic and Electrical Engineering undergraduate
+at Sunway University (CGPA 3.89 / 4.00, Dean's List across three semesters). My work
+sits where software meets hardware — a model or a piece of logic that has to produce a
+physical result: a servo that moves, a valve that closes, an alert that reaches someone
+in time.
 
 I take projects down the full stack: trained models, C++ firmware, Python backends,
 circuit design, CAD and 3D printing, and the IoT dashboards that make a system
-observable once it's running. I'm currently looking for **internship and graduate
-roles** in embedded systems, IoT or applied computer vision.
+observable once it's running. I'm currently looking for an **internship placement from
+25 January to 23 April 2027** in embedded systems, IoT or applied computer vision.
 
 This repository holds both the source of my portfolio site and the original technical
 reports behind each project.
@@ -46,7 +49,8 @@ threshold. The sort is confirmed by physics, not by a timer.
 
 **Result:** 0.984 mAP@0.5 across all three classes; peak F1 of 0.96 at 0.633 confidence.
 <br>**Stack:** YOLOv11s · Ultralytics · Python · OpenCV · ESP32 · HX711 load cells · Blynk IoT · SOLIDWORKS
-<br>**Status:** Built, trained and demonstrated end to end · team of 6
+<br>**Status:** Built, trained and demonstrated end to end
+<br>**My part:** trained/deployed the model, integrated the vision pipeline with the ESP32, mechanical CAD and circuit design · team of 6
 
 ---
 
@@ -64,7 +68,8 @@ project.
 
 **Design targets:** &lt;3 s voice response · caregiver alerted within 10 s · ≥85% command accuracy
 <br>**Stack:** ESP32 · Whisper · Google Gemini · Piper TTS · Flask · SQLite · MQTT · Telegram Bot API · LD2450 radar · Fusion 360
-<br>**Status:** ⚠️ Design stage — architecture, circuit, power budget, CAD and BOM complete; build runs to December 2026 · team of 4
+<br>**Status:** ⚠️ Design stage — architecture, circuit, power budget, CAD and BOM complete; build runs to December 2026
+<br>**My role:** System Architect &amp; Firmware Lead · team of 4
 
 ---
 
@@ -88,11 +93,11 @@ trickle charger for the battery pack.
 
 | | |
 | --- | --- |
-| **Languages** | Python · C++ (Arduino) · MATLAB |
+| **Languages** | C/C++ · Python (NumPy, Pandas, OpenCV, PyTorch/Ultralytics) · MATLAB &amp; Simulink |
 | **ML &amp; vision** | Ultralytics YOLO · OpenCV · Whisper · Gemini API · Piper TTS |
 | **Embedded** | ESP32 · ESP8266 · I²S audio · HX711 · mmWave radar · DS18B20 · L298N · UART |
 | **Connectivity** | HTTP/REST · MQTT · SMTP · Flask · SQLite · Blynk · ThingSpeak · Telegram Bot API |
-| **Mechanical &amp; PCB** | SOLIDWORKS · Fusion 360 · EasyEDA · FDM printing (PLA/ABS) |
+| **Mechanical &amp; PCB** | SOLIDWORKS · Onshape · Fusion 360 · EasyEDA · NI Multisim · FDM printing (PLA/ABS) |
 | **Practice** | CDIO · weighted decision matrices · WBS · Gantt &amp; critical path · BOM and whole-life costing |
 
 ## About the write-ups
@@ -120,7 +125,9 @@ docs/
     piper.md
     solar-irrigation.md
   assets/img/<project>/          figures extracted from the source reports
-  assets/img/site/               logo and favicon
+  assets/img/site/               logo, favicon and headshot
+  assets/video/                  smart-bin demo clip
+  assets/resume-joshua-oh.pdf    resume
   stylesheets/extra.css          palette, hero, cards, tech pills
 .github/workflows/deploy.yml     build + deploy to GitHub Pages
 *.pdf                            original technical reports
@@ -148,7 +155,9 @@ deployment. There is no `gh-pages` branch — the artifact is uploaded directly.
 ## Contact
 
 - **Email** — [yuqiao.oh@gmail.com](mailto:yuqiao.oh@gmail.com)
+- **LinkedIn** — [oh-yu-qiao](https://www.linkedin.com/in/oh-yu-qiao-425053317/)
 - **GitHub** — [@JoshuaOhYQ](https://github.com/JoshuaOhYQ)
+- **Resume** — [download PDF](docs/assets/resume-joshua-oh.pdf)
 
 Full technical reports available on request — each runs 35–70 pages with the complete
 decision matrices, firmware listings, circuit diagrams and test data.

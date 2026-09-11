@@ -15,7 +15,7 @@ stack, approach, features, challenges, results — so they can be read side by s
 
     **[Computer Vision Smart Waste Segregation](smart-waste-segregation.md)**
 
-    <span class="jo-card-meta">Team of 6 · Built &amp; demonstrated</span>
+    <span class="jo-card-meta">Vision &amp; firmware · Built &amp; demonstrated</span>
 
     A conveyor rig that classifies metal, paper and plastic in real time and diverts
     each stream into its own load-cell-weighed bin, reporting fill level to a Blynk
@@ -27,7 +27,7 @@ stack, approach, features, challenges, results — so they can be read side by s
 
     **[PIPER — Dementia Assistive Robot](piper.md)**
 
-    <span class="jo-card-meta">Team of 4 · Design stage</span>
+    <span class="jo-card-meta">System architect &amp; firmware lead · Design stage</span>
 
     A stationary companion robot for early-to-moderate dementia. mmWave radar
     replaces the camera so nothing is filmed; a local speech pipeline gives it
@@ -53,6 +53,6 @@ stack, approach, features, challenges, results — so they can be read side by s
 
 | Project | My role | Status | Headline result |
 | --- | --- | --- | --- |
-| [Smart Waste Segregation](smart-waste-segregation.md) | Team of 6 (Group 2) | Built &amp; demonstrated | 0.984 mAP@0.5; peak F1 0.96 at 0.633 confidence |
-| [PIPER](piper.md) | Team of 4 | Design stage, build scheduled | Full design + BOM at RM 234.90, within a RM 500 budget |
+| [Smart Waste Segregation](smart-waste-segregation.md) | Vision pipeline, ESP32 integration, CAD | Built &amp; demonstrated | 0.984 mAP@0.5; peak F1 0.96 at 0.633 confidence |
+| [PIPER](piper.md) | System architect &amp; firmware lead | Design stage, build scheduled | Full design + BOM at RM 234.90, within a RM 500 budget |
 | [Solar Irrigation](solar-irrigation.md) | Project manager &amp; software engineer | Built &amp; tested | Built for RM 135.91; 52.5 h idle battery runtime |

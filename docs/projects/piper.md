@@ -21,7 +21,7 @@ appliances by voice over MQTT.
 <dl>
   <dt>Context</dt><dd>Integrated Design Project 1, Sunway University — supervised by Dr Chia Wai Chong</dd>
   <dt>Timeline</dt><dd>April 2026 semester; report submitted 26 August 2026; build running to 31 December 2026</dd>
-  <dt>My role</dt><dd>Team member, one of four (Tay Shuen Min, Jordan Douglas Su E-Wern, Oh Yu Qiao, Puteri Amelya Dania)</dd>
+  <dt>My role</dt><dd><strong>System Architect &amp; Firmware Lead</strong> — in a four-person team (Tay Shuen Min, Jordan Douglas Su E-Wern, Oh Yu Qiao, Puteri Amelya Dania)</dd>
   <dt>Status</dt><dd><strong>Design stage.</strong> Architecture, circuit, power budget, CAD and BOM complete; hardware assembly scheduled from October 2026</dd>
   <dt>Budget</dt><dd>RM 234.90 BOM against a RM 500 allocation</dd>
 </dl>

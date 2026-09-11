@@ -20,18 +20,24 @@ running totals to an IoT dashboard and emailing a caretaker when a bin fills up.
 <dl>
   <dt>Context</dt><dd>Sustainable Engineering Design, Sunway University — Group 2</dd>
   <dt>Timeline</dt><dd>April 2025 semester, report submitted 12 July 2025</dd>
-  <dt>My role</dt><dd>Team member, one of six. See the note on attribution below.</dd>
+  <dt>My role</dt><dd>Model training &amp; vision pipeline, ESP32 integration, mechanical CAD and circuit design — in a six-person team</dd>
   <dt>Status</dt><dd>Physical prototype built, trained and demonstrated end to end</dd>
   <dt>Framework</dt><dd>CDIO — Conceive, Design, Implement, Operate</dd>
 </dl>
 </div>
 
-!!! note "A note on attribution"
+!!! note "What I worked on"
 
-    This was a six-person group project and the report credits Group 2 collectively
-    rather than splitting work by person. I have not claimed individual ownership of
-    any subsystem here. Ask me in an interview and I will tell you exactly which
-    parts I wrote.
+    This was a six-person group project and the report credits Group 2 collectively.
+    My own contributions were:
+
+    - **Trained and deployed the YOLOv11s model** on a self-collected 110-image
+      dataset — collection, labelling, training and validation.
+    - **Integrated the vision pipeline with the ESP32 over HTTP** to drive the
+      conveyor and dual servo diverters, with three HX711 load cells for per-bin
+      weight logging, the Blynk dashboard and the automated bin-full alerts.
+    - **Modelled the mechanical assembly in SOLIDWORKS** and 3D-printed it in PLA;
+      designed the circuit in EasyEDA and assembled it on perfboard.
 
 ---
 
@@ -207,34 +213,18 @@ instances — rather than papered over.
 
 </div>
 
-## Video
+## Demo
 
-<div class="jo-video-slot" markdown="1">
-<strong>Demo video slot</strong>
-No video file was found in this repository, so nothing is embedded yet.<br>
-See the instructions below to add one.
-</div>
+The rig running end to end — detection, diversion and weighing.
 
-!!! warning "For Joshua — how to add the demo video"
-
-    Two options, depending on file size:
-
-    **If the file is under ~25 MB** — drop it at
-    `docs/assets/video/smart-bin-demo.mp4`, then replace the `jo-video-slot` block
-    above with:
-
-    ```html
-    <video controls preload="metadata"
-           poster="../assets/img/smart-waste-segregation/yolo-validation-predictions.jpg">
-      <source src="../assets/video/smart-bin-demo.mp4" type="video/mp4">
-      Your browser does not support embedded video.
-    </video>
-    ```
-
-    **If it is larger than that** — don't commit it; it will bloat the repo
-    permanently. Upload it as an unlisted YouTube video and replace the block with
-    the standard YouTube `<iframe>` embed, or attach it to a GitHub Release and link
-    to it. I have not uploaded anything anywhere on your behalf.
+<figure markdown="span">
+  <video controls preload="metadata" playsinline>
+    <source src="../../assets/video/smart-bin-demo.mp4" type="video/mp4">
+    Your browser does not support embedded video.
+    <a href="../../assets/video/smart-bin-demo.mp4">Download the demo video</a> instead.
+  </video>
+  <figcaption>32-second walkthrough of the sorting cycle: an item is identified on the belt, the diverter arms set for its material, and the drop confirmed by load cell before the system returns to ready.</figcaption>
+</figure>
 
 ## Sustainability and stakeholders
 

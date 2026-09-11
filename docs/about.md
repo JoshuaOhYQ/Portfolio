@@ -5,15 +5,13 @@ description: Background, skills and what I'm looking for — Joshua Oh (Oh Yu Qi
 
 # About
 
-<div class="jo-portrait" markdown="1">
-Headshot goes here
-</div>
+![Joshua Oh](assets/img/site/headshot.jpg){ .jo-portrait }
 
-I'm **Joshua Oh (Oh Yu Qiao)**, an Electronic and Electrical Engineering undergraduate
-at Sunway University, Malaysia. My work sits where software meets hardware: the
-projects on this site all involve a model or a piece of logic that has to produce a
-physical result — a servo that moves, a valve that closes, an alert that reaches
-someone in time.
+I'm **Joshua Oh Yu Qiao**, a third-year Electronic and Electrical Engineering
+undergraduate at Sunway University, Malaysia, currently on a CGPA of **3.89 / 4.00**.
+My work sits where software meets hardware: the projects on this site all involve a
+model or a piece of logic that has to produce a physical result — a servo that moves,
+a valve that closes, an alert that reaches someone in time.
 
 What I keep coming back to is the part of a project where the clean idea meets
 reality. A YOLO model with a 0.984 mAP is an interesting artefact; making it drive
@@ -31,6 +29,11 @@ across mechanical design, circuitry and firmware.
 
 ## What I'm looking for
 
+!!! tip "Available for a 12-week placement: 25 January – 23 April 2027"
+
+    I'm actively looking for an internship in that window. The fastest way to reach
+    me is [email](contact.md).
+
 I'm interested in **internship and graduate roles** in embedded systems, IoT, or
 applied computer vision — teams building products where firmware, sensing and a bit
 of machine learning have to work together on real hardware. I'm equally happy writing
@@ -42,51 +45,83 @@ where I get to see the whole path from sensor to outcome.
 <div class="jo-skills" markdown="1">
 
 <section markdown="1">
-### Languages
-Python · C++ (Arduino) · MATLAB
+### Programming
+C / C++ · Python (NumPy, Pandas, OpenCV, PyTorch / Ultralytics) · MATLAB &amp; Simulink ·
+Git &amp; GitHub · VS Code · PlatformIO · Arduino IDE
 </section>
 
 <section markdown="1">
 ### Machine learning &amp; vision
-Ultralytics YOLO (custom dataset training, validation, tuning) · OpenCV ·
+Ultralytics YOLO (custom dataset collection, training, validation, tuning) · OpenCV ·
 Whisper (speech-to-text) · Google Gemini API · Piper TTS
 </section>
 
 <section markdown="1">
-### Embedded
-ESP32 · ESP8266 / NodeMCU · I²S digital audio · HX711 load-cell amplifiers ·
-24 GHz mmWave radar (LD2450) · DS18B20 · servo &amp; DC motor control (L298N) ·
-relay switching · UART
+### Embedded &amp; hardware
+ESP32 · ESP8266 / NodeMCU · sensor interfacing over I²C / I²S / UART / OneWire ·
+24 GHz mmWave radar (LD2450) · DS18B20 · HX711 load cells · I²S MEMS microphones ·
+servo &amp; relay actuation · voltage regulation and power budgeting ·
+soldering and perfboard prototyping · oscilloscopes and multimeters
 </section>
 
 <section markdown="1">
-### Connectivity &amp; backend
-HTTP / REST · MQTT · SMTP · Flask · SQLite · Blynk · ThingSpeak · Telegram Bot API
+### IoT, cloud &amp; AI
+MQTT · Flask REST APIs · SQLite · HTTP/REST device communication ·
+LLM and speech-pipeline integration · Blynk · ThingSpeak ·
+SMTP &amp; Telegram alerting · real-time dashboards and data logging
 </section>
 
 <section markdown="1">
-### Mechanical &amp; electronic design
-SOLIDWORKS · Autodesk Fusion 360 · EasyEDA schematic capture ·
+### Design &amp; simulation
+SOLIDWORKS · Onshape · Autodesk Fusion 360 · EasyEDA · NI Multisim ·
 FDM 3D printing in PLA and ABS · enclosure and weatherproofing design
 </section>
 
 <section markdown="1">
 ### Engineering practice
 CDIO framework · weighted decision-matrix trade studies · work breakdown structures ·
-Gantt charts &amp; critical path method · bill-of-materials and whole-life cost analysis ·
-stakeholder engagement · Git &amp; GitHub
+Gantt charts, critical path method &amp; budget variance analysis ·
+bill-of-materials and whole-life cost analysis · laboratory instrumentation ·
+stakeholder engagement · technical report writing
+</section>
+
+<section markdown="1">
+### Spoken languages
+Bahasa Malaysia · English · Mandarin · Cantonese *(fluent)* · German *(basic)*
 </section>
 
 </div>
 
 ## Education
 
-**Bachelor of Electronic and Electrical Engineering (Hons)**
-School of Engineering, Faculty of Engineering and Technology
-Sunway University, Malaysia
+**Bachelor of Electronic and Electrical Engineering with Honours** — Apr 2024 – Apr 2028
+School of Engineering, Faculty of Engineering and Technology, Sunway University, Subang Jaya
+
+- Current CGPA **3.89 / 4.00**
+- **Dean's List** — Sep 2024, Apr 2025 and Sep 2025 semesters
+- **Jeffrey Cheah Entrance Scholarship** recipient
+
+**Cambridge A-Levels — 3A** (Mathematics, Physics, Chemistry) — Jul 2022 – Nov 2023
+INTI International College Subang — *Top Student, A-Level (2023) and AS-Level (2023)*
+
+**Sijil Pelajaran Malaysia (SPM)**, Science Stream — 8A, 1B — Jan 2017 – Mar 2022
+SMK Bandar Sri Damansara 1, Kuala Lumpur
 
 Coursework represented on this site includes Sustainable Engineering Design,
 Integrated Design Project, and Project Management & Engineering Design.
+
+## Experience
+
+**Assistant Head, Events &amp; Social Media** — Sales Support Team (part-time)
+INTI International College Subang · Feb 2023 – Apr 2024
+
+Led a team of 8–12 student helpers across the Mid Valley Higher Education Fair, INTI
+Open Day and the WOW Event — running recruitment alongside the HR team, chairing
+pre-event meetings and training sessions, and handling data entry and lead-collection
+calls.
+
+It isn't engineering work, but it is where I learned to run a team to a deadline,
+which is what I was doing again as project manager on the irrigation controller.
 
 ## Beyond the technical
 
@@ -100,14 +135,5 @@ and the components that were destroyed learning something. That is deliberate.
 
 ---
 
-!!! warning "For Joshua — to complete this page"
-
-    - **Headshot.** Drop a photo at `docs/assets/img/site/headshot.jpg` (portrait,
-      roughly 4:5, ideally 800×1000 px or larger), then replace the `jo-portrait`
-      block at the top of this file with:
-      `![Joshua Oh](assets/img/site/headshot.jpg){ .jo-portrait }`
-    - **Graduation year.** Add your expected graduation date under Education — employers
-      filter on it.
-    - **Anything not in the three reports** — work experience, coursework highlights,
-      societies, awards, languages spoken. I only had the project reports to work from,
-      so nothing here is invented.
+Want the detail in one page? [Download my resume](assets/resume-joshua-oh.pdf) or
+[get in touch](contact.md).

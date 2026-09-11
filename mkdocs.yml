@@ -99,6 +99,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/JoshuaOhYQ
       name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/oh-yu-qiao-425053317/
+      name: LinkedIn
     - icon: fontawesome/solid/envelope
       link: mailto:yuqiao.oh@gmail.com
       name: Email

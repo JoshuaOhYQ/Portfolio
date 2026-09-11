@@ -18,6 +18,8 @@ with dementia, a solar-charged valve that keeps scalding water off a farmer's cr
 Python backends, circuit design, CAD and 3D printing, and the IoT dashboards that
 make the thing observable once it's running.
 
+Third-year, CGPA 3.89 — **available for a 12-week placement, 25 January – 23 April 2027.**
+
 <div class="jo-hero-actions" markdown="1">
 [View projects](projects/index.md){ .jo-primary }
 [About me](about.md)
@@ -33,7 +35,7 @@ make the thing observable once it's running.
 
     **[Computer Vision Smart Waste Segregation](projects/smart-waste-segregation.md)**
 
-    <span class="jo-card-meta">Team of 6 · Built &amp; demonstrated · Jul 2025</span>
+    <span class="jo-card-meta">Vision &amp; firmware · Built &amp; demonstrated · Jul 2025</span>
 
     A conveyor rig that identifies metal, paper and plastic with a custom-trained
     YOLO model and diverts each into its own weighed bin. Reached **0.984 mAP@0.5**
@@ -45,7 +47,7 @@ make the thing observable once it's running.
 
     **[PIPER — Dementia Assistive Robot](projects/piper.md)**
 
-    <span class="jo-card-meta">Team of 4 · Design stage · Apr 2026 —</span>
+    <span class="jo-card-meta">System architect &amp; firmware lead · Design stage</span>
 
     A privacy-preserving companion robot: mmWave radar for fall detection instead of
     a camera, and a local Whisper → Gemini → Piper TTS voice pipeline with a memory
@@ -57,7 +59,7 @@ make the thing observable once it's running.
 
     **[Solar Irrigation Control](projects/solar-irrigation.md)**
 
-    <span class="jo-card-meta">Project manager · Built &amp; tested · Aug 2025</span>
+    <span class="jo-card-meta">Project manager &amp; software engineer · Built &amp; tested</span>
 
     Pipeline water in Malaysia can exceed 50 °C under the sun. This solar-charged
     controller measures it and holds the valve shut until it is safe to irrigate.
