@@ -109,7 +109,7 @@ rather than implying a finished result, and the write-ups deliberately include t
 things that went wrong: the class imbalance behind a strong mAP figure, the solar
 panel that couldn't do its job, and the components destroyed learning something.
 
-The three source reports are kept in the repository root for reference.
+The full technical reports behind each project are available on request.
 
 ## Repository layout
 
@@ -130,7 +130,6 @@ docs/
   assets/resume-joshua-oh.pdf    resume
   stylesheets/extra.css          palette, hero, cards, tech pills
 .github/workflows/deploy.yml     build + deploy to GitHub Pages
-*.pdf                            original technical reports
 ```
 
 ## Building locally
