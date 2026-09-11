@@ -127,7 +127,8 @@ docs/
   assets/img/<project>/          figures extracted from the source reports
   assets/img/site/               logo, favicon and headshot
   assets/video/                  smart-bin demo clip
-  assets/resume-joshua-oh.pdf    resume
+  assets/resume-joshua-oh-web.pdf
+                                 resume (address/phone removed)
   stylesheets/extra.css          palette, hero, cards, tech pills
 .github/workflows/deploy.yml     build + deploy to GitHub Pages
 ```
@@ -156,7 +157,7 @@ deployment. There is no `gh-pages` branch — the artifact is uploaded directly.
 - **Email** — [yuqiao.oh@gmail.com](mailto:yuqiao.oh@gmail.com)
 - **LinkedIn** — [oh-yu-qiao](https://www.linkedin.com/in/oh-yu-qiao-425053317/)
 - **GitHub** — [@JoshuaOhYQ](https://github.com/JoshuaOhYQ)
-- **Resume** — [download PDF](docs/assets/resume-joshua-oh.pdf)
+- **Resume** — [download PDF](docs/assets/resume-joshua-oh-web.pdf)
 
 Full technical reports available on request — each runs 35–70 pages with the complete
 decision matrices, firmware listings, circuit diagrams and test data.

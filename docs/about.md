@@ -135,5 +135,5 @@ and the components that were destroyed learning something. That is deliberate.
 
 ---
 
-Want the detail in one page? [Download my resume](assets/resume-joshua-oh.pdf) or
+Want the detail in one page? [Download my resume](assets/resume-joshua-oh-web.pdf) or
 [get in touch](contact.md).

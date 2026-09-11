@@ -40,7 +40,7 @@ applied computer vision. The fastest way to reach me is email.
 
     ---
 
-    [Download PDF](assets/resume-joshua-oh.pdf)
+    [Download PDF](assets/resume-joshua-oh-web.pdf)
 
     One page — education, projects, technical skills and experience.
 

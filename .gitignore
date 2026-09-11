@@ -12,3 +12,6 @@ venv/
 Thumbs.db
 .vscode/
 .idea/
+
+# Full resume with home address and phone number - kept locally, never published
+resume-full-private.pdf
