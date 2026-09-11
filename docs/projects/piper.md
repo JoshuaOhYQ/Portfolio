@@ -262,9 +262,12 @@ replace them.
 | 4 | System testing and performance evaluation | 14 December 2026 |
 | 5 | Final handover and documentation | 31 December 2026 |
 
-!!! note "For Joshua — update this page as the build progresses"
+## To be continued
 
-    Once testing starts, this page should gain a **Results** section with measured
-    voice response time, alert latency and command accuracy against the three
-    objectives, plus photos of the assembled robot. Swap the status line in the spec
-    block at the top when that happens.
+Hardware assembly starts in October 2026, and this page grows with the build. Once
+the system is integrated and testing begins, it will carry measured results —
+voice response time, alert latency and command execution accuracy against the three
+objectives set out above — alongside photographs of the assembled robot.
+
+Until those numbers exist, they aren't quoted here. If you'd like to talk through the
+design in more detail in the meantime, [get in touch](../contact.md).
