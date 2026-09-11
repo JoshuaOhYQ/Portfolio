@@ -6,7 +6,7 @@ description: Background, skills and what I'm looking for — Joshua Oh (Oh Yu Qi
 # About
 
 <div class="jo-portrait" markdown="1">
-Headshot goes here
+(assets/img/Headshot/photo.jpg)
 </div>
 
 I'm **Joshua Oh (Oh Yu Qiao)**, an Electronic and Electrical Engineering undergraduate
