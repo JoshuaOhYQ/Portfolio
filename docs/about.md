@@ -8,7 +8,7 @@ description: Background, skills and what I'm looking for — Joshua Oh (Oh Yu Qi
 ![Joshua Oh](assets/img/site/headshot.jpg){ .jo-portrait }
 
 I'm **Joshua Oh Yu Qiao**, a third-year Electronic and Electrical Engineering
-undergraduate at Sunway University, Malaysia, currently on a CGPA of **3.89 / 4.00**.
+undergraduate at Sunway University, Malaysia, currently on a CGPA of **3.91 / 4.00**.
 My work sits where software meets hardware: the projects on this site all involve a
 model or a piece of logic that has to produce a physical result — a servo that moves,
 a valve that closes, an alert that reaches someone in time.
@@ -97,7 +97,7 @@ Bahasa Malaysia · English · Mandarin · Cantonese *(fluent)* · German *(basic
 **Bachelor of Electronic and Electrical Engineering with Honours** — Apr 2024 – Apr 2028
 School of Engineering, Faculty of Engineering and Technology, Sunway University, Subang Jaya
 
-- Current CGPA **3.89 / 4.00**
+- Current CGPA **3.91 / 4.00**
 - **Dean's List** — Sep 2024, Apr 2025 and Sep 2025 semesters
 - **Jeffrey Cheah Entrance Scholarship** recipient
 

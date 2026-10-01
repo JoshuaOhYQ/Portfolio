@@ -18,7 +18,7 @@ with dementia, a solar-charged valve that keeps scalding water off a farmer's cr
 Python backends, circuit design, CAD and 3D printing, and the IoT dashboards that
 make the thing observable once it's running.
 
-Third-year, CGPA 3.89 — **available for a 12-week placement, 25 January – 23 April 2027.**
+Third-year, CGPA 3.91 — **available for a 12-week placement, 25 January – 23 April 2027.**
 
 <div class="jo-hero-actions" markdown="1">
 [View projects](projects/index.md){ .jo-primary }

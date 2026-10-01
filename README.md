@@ -21,7 +21,7 @@ Embedded systems, computer vision and IoT — taken from problem statement to wo
 ## About
 
 I'm Joshua Oh Yu Qiao, a third-year Electronic and Electrical Engineering undergraduate
-at Sunway University (CGPA 3.89 / 4.00, Dean's List across three semesters). My work
+at Sunway University (CGPA 3.91 / 4.00, Dean's List across three semesters). My work
 sits where software meets hardware — a model or a piece of logic that has to produce a
 physical result: a servo that moves, a valve that closes, an alert that reaches someone
 in time.
